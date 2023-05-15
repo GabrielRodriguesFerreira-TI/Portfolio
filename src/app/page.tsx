@@ -1,3 +1,4 @@
+import { AboutMeComponent } from "@/components/aboutMe/AboutMe";
 import { PresentationComponent } from "@/components/presentation/Presentation";
 
 export default function Home() {
@@ -6,8 +7,8 @@ export default function Home() {
       <section className="h-screen px-4 py-2 flex flex-col gap-28 md:flex-row">
         <PresentationComponent />
       </section>
-      <section className="h-screen px-4">
-        <p>Sobre mim</p>
+      <section className="h-screen px-4 flex flex-col gap-3">
+        <AboutMeComponent />
       </section>
       <section className="h-screen px-4">
         <p>Meus projetos</p>
