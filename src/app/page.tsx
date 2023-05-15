@@ -3,7 +3,7 @@ import { PresentationComponent } from "@/components/presentation/Presentation";
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 h-screen overflow-y-scroll">
-      <section className="h-screen px-4 py-2 flex flex-col gap-12 md:flex-row">
+      <section className="h-screen px-4 py-2 flex flex-col gap-28 md:flex-row">
         <PresentationComponent />
       </section>
       <section className="h-screen px-4">
