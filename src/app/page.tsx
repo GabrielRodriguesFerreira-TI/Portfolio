@@ -1,23 +1,23 @@
-import Image from "next/image";
+import { PresentationComponent } from "@/components/presentation/Presentation";
 
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 h-screen overflow-y-scroll">
-      <div className="h-screen px-4">
-        <p>Apresentação</p>
-      </div>
-      <div className="h-screen px-4">
+      <section className="h-screen px-4 py-2 flex flex-col">
+        <PresentationComponent />
+      </section>
+      <section className="h-screen px-4">
         <p>Sobre mim</p>
-      </div>
-      <div className="h-screen px-4">
+      </section>
+      <section className="h-screen px-4">
         <p>Meus projetos</p>
-      </div>
-      <div className="h-screen px-4">
+      </section>
+      <section className="h-screen px-4">
         <p>Planejamento</p>
-      </div>
-      <div className="h-screen px-4">
+      </section>
+      <section className="h-screen px-4">
         <p>Contato</p>
-      </div>
+      </section>
     </main>
   );
 }
