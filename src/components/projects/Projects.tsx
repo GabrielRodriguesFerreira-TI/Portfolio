@@ -16,8 +16,8 @@ export const ProjectsComponent = () => {
         <h2 className="text-3xl font-bold">Meus projetos recentes</h2>
       </div>
       <div className="flex flex-col gap-6 justify-center">
-        <div className="flex flex-row gap-2 items-center">
-          <div className="bg-[#2B2B32] w-[95%] h-[230px] rounded-xl relative">
+        <div className="flex flex-row gap-2 items-center justify-center">
+          <div className="bg-[#2B2B32] w-full max-w-2xl h-[230px] rounded-xl relative">
             <section
               className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out ${
                 sectionIndex === 0 ? "opacity-100" : "opacity-0"
