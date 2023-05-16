@@ -1,4 +1,5 @@
 "use client";
+import "./section.css";
 import Image from "next/image";
 import ImageIcon from "@mui/icons-material/Image";
 import { useState } from "react";
@@ -11,6 +12,7 @@ export const SectionComponent = ({
   description,
   link,
   sectionIndex,
+  projectTechs,
 }: iSectionOptions) => {
   const [isPhotoOpen, setIsPhotoOpen] = useState(false);
 
@@ -22,10 +24,19 @@ export const SectionComponent = ({
     setIsPhotoOpen(false);
   };
 
+  const extractIconName = (src: string) => {
+    const parts = src.split("/");
+    console.log(parts);
+    let filename = parts[parts.length - 1];
+    filename = filename.replace(".svg", "");
+    filename = filename.replace(/\.[^.]*$/, "");
+    return filename;
+  };
+
   return (
     <>
       <section
-        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out ${
+        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out md:flex md:justify-around md:flex-col ${
           sectionIndex === index ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -48,6 +59,13 @@ export const SectionComponent = ({
               >
                 <ImageIcon className="cursor-pointer" />
               </div>
+              <div className="absolute top-[-140px] left-48 h-[200px] w-72 justify-center rounded-md overflow-hidden hidden md:mb-28 md:block">
+                <Image
+                  src={image}
+                  alt="Profile picture"
+                  className="object-cover object-top w-full h-full"
+                />
+              </div>
               <a
                 href={`${link}`}
                 target="_blank"
@@ -62,6 +80,29 @@ export const SectionComponent = ({
                 <p>{description}</p>
               </li>
             </ul>
+            <div
+              className="flex-row justify-around hidden md:flex"
+              style={{ zIndex: 1 }}
+            >
+              {projectTechs.map((element, index) => {
+                const iconName = extractIconName(element.src);
+                return (
+                  <div
+                    className="relative inline-block tooltip"
+                    key={index}
+                    title={iconName}
+                  >
+                    <Image
+                      src={element}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="filter grayscale transition duration-300 ease-in-out transform hover:scale-105 hover:filter-none cursor-pointer"
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </>
         )}
       </section>

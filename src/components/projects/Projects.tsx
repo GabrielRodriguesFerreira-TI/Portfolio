@@ -6,6 +6,12 @@ import InSync from "../../../public/Loading page.png";
 import FindMyDuo from "../../../public/FindMyDuo.png";
 import BurgerKenzie from "../../../public/BugerKenzie.png";
 import { SectionComponent } from "./section/Section";
+import NodeIcon from "../../assets/nodejs.svg";
+import TypescriptIcon from "../../assets/typescript.svg";
+import postegreSQLIcon from "../../assets/postegreSQL.svg";
+import ZodIcon from "../../assets/zod.svg";
+import typeORMIcon from "../../assets/typeORM.svg";
+import FirebaseIcon from "../../assets/firebase.svg";
 
 export const ProjectsComponent = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -30,6 +36,13 @@ export const ProjectsComponent = () => {
               description="A plataforma é um espaço online para que desenvolvedores possam encontrar outros profissionais interessados em trabalhar em projetos em grupo. Com uma interface intuitiva e recursos de busca avançados, é fácil encontrar pessoas com as habilidades necessárias para fazer o seu projeto acontecer."
               link="https://github.com/insync-project"
               projectName="InSycn"
+              projectTechs={[
+                NodeIcon,
+                TypescriptIcon,
+                postegreSQLIcon,
+                ZodIcon,
+                typeORMIcon,
+              ]}
             />
             <SectionComponent
               sectionIndex={sectionIndex}
@@ -38,6 +51,14 @@ export const ProjectsComponent = () => {
               description="Inicialmente feito para mobile. O “Find my Duo” tem como propósito ajudar pessoas que têm dificuldade em achar um parceiro(a) para jogar junto! Com o “Find my Duo” será possível encontrar gamers que tenham os mesmos gostos que os seus baseado em seu perfil."
               link="https://github.com/FindMyDuo"
               projectName="Find My Duo"
+              projectTechs={[
+                NodeIcon,
+                TypescriptIcon,
+                postegreSQLIcon,
+                ZodIcon,
+                typeORMIcon,
+                FirebaseIcon,
+              ]}
             />
             <SectionComponent
               sectionIndex={sectionIndex}
@@ -46,6 +67,12 @@ export const ProjectsComponent = () => {
               description="O projeto Hamburgueria da Kenzie simula a página de pedidos de uma lanchonete, tornando possível adicionar e excluir itens no carrinho de compras, como também filtrar os itens do catálogo."
               link="https://projeto-react-js-type-script-hamburgueria-2-0.vercel.app/login"
               projectName="Burger Kenzie"
+              projectTechs={[
+                NodeIcon,
+                TypescriptIcon,
+                postegreSQLIcon,
+                typeORMIcon,
+              ]}
             />
           </div>
           <button
