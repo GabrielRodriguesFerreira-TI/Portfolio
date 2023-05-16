@@ -10,14 +10,14 @@ import Descubra from "../../../public/descubra-icon.svg";
 export const PresentationComponent = () => {
   return (
     <>
-      <nav className="flex gap-3 md:flex-col md:gap-12">
+      <nav className="flex gap-3 md:flex-col md:gap-12 md:fixed">
         <Image
           src={LogoPic}
           alt="Picture of the site logo"
           width={40}
           height={40}
         />
-        <div className="flex w-full items-center justify-between md:flex-col md:h-[85%]">
+        <div className="flex w-full items-center justify-between md:flex-col md:h-[84vh]">
           <div className="w-[25%] md:w-2 md:flex md:h-[35%]">
             <div className="h-1 bg-gray-400 w-full rounded md:h-[100%]" />
           </div>
@@ -62,7 +62,7 @@ export const PresentationComponent = () => {
           </div>
         </div>
       </nav>
-      <div className="flex flex-col gap-28 h-[80%] items-center justify-center md:h-[100%] md:mt-5">
+      <div className="flex flex-col gap-28 h-[80%] items-center justify-center md:h-[100%] md:mt-5 md:w-[100%]">
         <div className="flex flex-col gap-8 md:items-center">
           <h1 className="text-2xl text-center font-bold">
             Olá, eu me chamo <strong className="gradient-text">Gabriel</strong>
