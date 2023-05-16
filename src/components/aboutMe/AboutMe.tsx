@@ -5,7 +5,7 @@ import Image from "next/image";
 export const AboutMeComponent = () => {
   return (
     <>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 md:w-[50%]">
         <span>
           <strong className="text-lg font-bold gradient-text">Sobre mim</strong>
           <h2 className="text-4xl font-bold">Minha experiência pessoal</h2>
@@ -27,11 +27,11 @@ export const AboutMeComponent = () => {
           solução de bugs de forma eficiente e eficaz.
         </p>
       </div>
-      <div className="flex h-[45%] justify-center">
+      <div className="h-[300px] w-72 justify-center rounded-full overflow-hidden">
         <Image
-          className="rounded-full"
           src={ProfilePicture}
           alt="Profile picture"
+          className="object-cover object-top w-full h-full"
         />
       </div>
     </>
