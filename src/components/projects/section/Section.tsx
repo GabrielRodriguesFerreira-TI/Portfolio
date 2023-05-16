@@ -26,7 +26,6 @@ export const SectionComponent = ({
 
   const extractIconName = (src: string) => {
     const parts = src.split("/");
-    console.log(parts);
     let filename = parts[parts.length - 1];
     filename = filename.replace(".svg", "");
     filename = filename.replace(/\.[^.]*$/, "");
