@@ -8,10 +8,10 @@ export default function Home() {
       <section className="h-screen px-4 py-2 flex flex-col gap-28 md:flex-row">
         <PresentationComponent />
       </section>
-      <section className="h-screen px-4 flex flex-col items-center gap-3 md:flex-row md:justify-center md:gap-36 md:py-4">
+      <section className="h-screen px-4 flex flex-col items-center gap-3 md:flex-row md:justify-center md:gap-36 md:py-4 md:px-16">
         <AboutMeComponent />
       </section>
-      <section className="h-screen px-4 flex flex-col gap-52">
+      <section className="h-screen px-4 flex flex-col gap-52 md:px-16">
         <ProjectsComponent />
       </section>
       <section className="h-screen px-4">
