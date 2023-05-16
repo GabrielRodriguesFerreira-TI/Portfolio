@@ -7,4 +7,5 @@ export interface iSectionOptions {
   description: string;
   link: string;
   sectionIndex: number;
+  projectTechs: Array<any>;
 }
