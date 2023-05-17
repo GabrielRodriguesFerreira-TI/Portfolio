@@ -1,4 +1,5 @@
 import { AboutMeComponent } from "@/components/aboutMe/AboutMe";
+import { PlanningComponent } from "@/components/planning/Planning";
 import { PresentationComponent } from "@/components/presentation/Presentation";
 import { ProjectsComponent } from "@/components/projects/Projects";
 
@@ -14,8 +15,8 @@ export default function Home() {
       <section className="h-screen px-4 flex flex-col gap-52 md:px-16">
         <ProjectsComponent />
       </section>
-      <section className="h-screen px-4">
-        <p>Planejamento</p>
+      <section className="h-screen px-4 flex flex-col gap-12">
+        <PlanningComponent />
       </section>
       <section className="h-screen px-4">
         <p>Contato</p>
