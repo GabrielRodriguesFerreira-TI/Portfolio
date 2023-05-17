@@ -15,7 +15,7 @@ export default function Home() {
       <section className="h-screen px-4 flex flex-col gap-52 md:px-16">
         <ProjectsComponent />
       </section>
-      <section className="h-screen px-4 flex flex-col gap-12">
+      <section className="h-screen px-4 flex flex-col gap-12 md:items-center md:gap-24">
         <PlanningComponent />
       </section>
       <section className="h-screen px-4">

@@ -64,10 +64,10 @@ export const PresentationComponent = () => {
       </nav>
       <div className="flex flex-col gap-28 h-[80%] items-center justify-center md:h-[100%] md:mt-5 md:w-[100%]">
         <div className="flex flex-col gap-8 md:items-center">
-          <h1 className="text-2xl text-center font-bold">
+          <h1 className="text-2xl text-center font-bold md:text-3xl">
             Olá, eu me chamo <strong className="gradient-text">Gabriel</strong>
           </h1>
-          <p className="text-center md:w-[50%]">
+          <p className="text-center md:w-[50%] md:text-xl">
             Desenvolvedor web Full-Stack autodidata, sempre entregando os
             <strong className="gradient-text"> melhores</strong> projetos a 1
             ano.
