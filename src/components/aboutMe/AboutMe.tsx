@@ -10,13 +10,13 @@ export const AboutMeComponent = () => {
           <strong className="text-lg font-bold gradient-text">Sobre mim</strong>
           <h2 className="text-4xl font-bold">Minha experiência pessoal</h2>
         </span>
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-gray-400 md:text-lg">
           Desenvolvedor Full-Stack Com experiência em HTML, CSS, JavaScript e
           TypeScript para criação de interfaces de usuário responsivas e
           atraentes, como para criação de tabelas e API Restful bem estruturadas
           e funcionais.
         </p>
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-gray-400 md:text-lg">
           Possuo sólido conhecimento de frameworks populares de Front-End e
           Back-End, como React, Next Js, Node Js, Express, Python, PostgreSQL,
           MongoDB e Docker, além de habilidades em desenvolvimento de softwares,
