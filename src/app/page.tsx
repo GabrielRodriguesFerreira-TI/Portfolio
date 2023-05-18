@@ -19,7 +19,7 @@ export default function Home() {
       <section className="h-screen px-4 flex flex-col gap-12 md:items-center md:gap-24">
         <PlanningComponent />
       </section>
-      <section className="h-screen px-4 flex flex-col gap-20">
+      <section className="h-screen px-4 flex flex-col items-center gap-14 md:flex-row md:justify-center md:px-14">
         <ContactComponent />
       </section>
     </main>

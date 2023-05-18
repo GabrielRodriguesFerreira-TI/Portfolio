@@ -18,10 +18,10 @@ export const PresentationComponent = () => {
           height={40}
         />
         <div className="flex w-full items-center justify-between md:flex-col md:h-[84vh]">
-          <div className="w-[25%] md:w-2 md:flex md:h-[35%]">
+          <div className="w-[45%] md:w-2 md:flex md:h-[35%]">
             <div className="h-1 bg-gray-400 w-full rounded md:h-[100%]" />
           </div>
-          <div className="flex gap-2 md:flex-col md:gap-8">
+          <div className="flex w-full justify-around gap-2 md:flex-col md:gap-8">
             <a
               href="https://www.linkedin.com/in/gabriel-rodrigues-ferreira-27b21b243/"
               target="_blank"
@@ -57,7 +57,7 @@ export const PresentationComponent = () => {
               />
             </a>
           </div>
-          <div className="w-[25%] md:w-2 md:flex md:h-[35%]">
+          <div className="w-[45%] md:w-2 md:flex md:h-[35%]">
             <div className="h-1 bg-gray-400 w-full rounded md:h-[100%]" />
           </div>
         </div>
