@@ -22,7 +22,7 @@ export const ProjectsComponent = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4 md:mt-20">
         <strong className="text-xl font-bold gradient-text">Projetos</strong>
         <h2 className="text-3xl font-bold">Meus projetos recentes</h2>
       </div>
