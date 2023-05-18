@@ -1,22 +1,28 @@
 "use client";
-import { useState } from "react";
-import "../presentation/presentation.css";
-import { CssTextField } from "./styles";
+import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
 import Linkedin from "../../../public/icons8-linkedin.svg";
 import GitHub from "../../../public/icons8-github.svg";
 import Instagram from "../../../public/icons8-instagram.svg";
+import { CssTextField } from "./styles";
+import "../presentation/presentation.css";
 
 export const ContactComponent = () => {
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
+  const [isDisabled, setIsDisabled] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const API_URL = "/api/sendEmail";
+  const SUCCESS_MESSAGE = "Email enviado com sucesso!";
+  const ERROR_MESSAGE = "Erro ao enviar o email.";
 
+  const sendEmail = async () => {
     try {
-      const response = await fetch("/api/sendEmail", {
+      setIsDisabled(true);
+      const response = await fetch(API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -24,7 +30,7 @@ export const ContactComponent = () => {
         body: JSON.stringify({ email, title, message }),
       });
 
-      const data = await response.json();
+      await response.json();
 
       setTimeout(() => {
         setEmail("");
@@ -33,7 +39,21 @@ export const ContactComponent = () => {
       }, 100);
     } catch (error) {
       console.error(error);
+      toast.error(ERROR_MESSAGE);
+    } finally {
+      setIsDisabled(false);
     }
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const toastId = toast.info("Enviando mensagem...", { autoClose: false });
+    await sendEmail();
+    toast.update(toastId, {
+      render: SUCCESS_MESSAGE,
+      type: toast.TYPE.SUCCESS,
+      autoClose: 3000,
+    });
   };
 
   return (
@@ -146,12 +166,22 @@ export const ContactComponent = () => {
           />
           <button
             type="submit"
-            className="w-[90%] h-11 rounded-3xl bg-violet-600"
+            className={`w-[90%] h-11 rounded-3xl bg-violet-600 ${
+              isDisabled
+                ? "opacity-50 cursor-not-allowed"
+                : "opacity-100 cursor-pointer hover:bg-violet-800 duration-500 ease-in-out"
+            } ${
+              !email || !title || !message
+                ? "opacity-50 cursor-not-allowed"
+                : "opacity-100 cursor-pointer hover:bg-violet-800 duration-500 ease-in-out"
+            }`}
+            disabled={isDisabled || !email || !title || !message}
           >
-            Enviar
+            {isDisabled ? "Enviando..." : "Enviar"}
           </button>
         </form>
       </div>
+      <ToastContainer position="bottom-right" />
     </>
   );
 };
