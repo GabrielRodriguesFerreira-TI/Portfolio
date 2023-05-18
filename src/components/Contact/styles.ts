@@ -35,6 +35,10 @@ export const CssTextField = styled(TextField)({
     borderBottomColor: "#ffffff",
   },
 
+  "&:hover .MuiInput-underline:before": {
+    borderBottomColor: "#ffffff",
+  },
+
   "& input:-webkit-autofill": {
     "-webkit-box-shadow": "0 0 0 100px #2B2B32 inset",
     "-webkit-text-fill-color": "#ffffff",
