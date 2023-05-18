@@ -1,3 +1,4 @@
+import { ContactComponent } from "@/components/Contact/Contact";
 import { AboutMeComponent } from "@/components/aboutMe/AboutMe";
 import { PlanningComponent } from "@/components/planning/Planning";
 import { PresentationComponent } from "@/components/presentation/Presentation";
@@ -18,8 +19,8 @@ export default function Home() {
       <section className="h-screen px-4 flex flex-col gap-12 md:items-center md:gap-24">
         <PlanningComponent />
       </section>
-      <section className="h-screen px-4">
-        <p>Contato</p>
+      <section className="h-screen px-4 flex flex-col gap-20">
+        <ContactComponent />
       </section>
     </main>
   );
