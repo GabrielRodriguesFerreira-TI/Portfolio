@@ -5,6 +5,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import InSync from "../../../public/Loading page.png";
 import FindMyDuo from "../../../public/FindMyDuo.png";
 import BurgerKenzie from "../../../public/BugerKenzie.png";
+import Netflix from "../../../public/Netflix2.0.png";
 import { SectionComponent } from "./section/Section";
 import NodeIcon from "../../assets/nodejs.svg";
 import TypescriptIcon from "../../assets/typescript.svg";
@@ -12,12 +13,17 @@ import postegreSQLIcon from "../../assets/postegreSQL.svg";
 import ZodIcon from "../../assets/zod.svg";
 import typeORMIcon from "../../assets/typeORM.svg";
 import FirebaseIcon from "../../assets/firebase.svg";
+import ReactIcon from "../../assets/react.svg";
+import NextIcon from "../../assets/nextjs.svg";
+import JavaScriptIcon from "../../assets/javascript.svg";
+import SassIcon from "../../assets/sass.svg";
+import StripeIcon from "../../assets/stripe.svg";
 
 export const ProjectsComponent = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
 
   const handleButtonClick = () => {
-    setSectionIndex((sectionIndex + 1) % 3);
+    setSectionIndex((sectionIndex + 1) % 4);
   };
 
   return (
@@ -49,10 +55,10 @@ export const ProjectsComponent = () => {
               image={FindMyDuo}
               index={1}
               description="Inicialmente feito para mobile. O “Find my Duo” tem como propósito ajudar pessoas que têm dificuldade em achar um parceiro(a) para jogar junto! Com o “Find my Duo” será possível encontrar gamers que tenham os mesmos gostos que os seus baseado em seu perfil."
-              link="https://github.com/FindMyDuo"
+              link="https://projeto-findmyduo-six.vercel.app/"
               projectName="Find My Duo"
               projectTechs={[
-                NodeIcon,
+                ReactIcon,
                 TypescriptIcon,
                 postegreSQLIcon,
                 ZodIcon,
@@ -68,10 +74,25 @@ export const ProjectsComponent = () => {
               link="https://projeto-react-js-type-script-hamburgueria-2-0.vercel.app/login"
               projectName="Burger Kenzie"
               projectTechs={[
-                NodeIcon,
+                ReactIcon,
                 TypescriptIcon,
                 postegreSQLIcon,
                 typeORMIcon,
+              ]}
+            />
+            <SectionComponent
+              sectionIndex={sectionIndex}
+              image={Netflix}
+              index={3}
+              description="Projeto baseado na interface do Netflix, com sistema de pagamentos(fake) pelo stripe em conjunto com a database do Firebase."
+              link="https://netflix-2-0-three.vercel.app/"
+              projectName="Netflix 2.0"
+              projectTechs={[
+                NextIcon,
+                JavaScriptIcon,
+                SassIcon,
+                FirebaseIcon,
+                StripeIcon,
               ]}
             />
           </div>
@@ -96,6 +117,11 @@ export const ProjectsComponent = () => {
           <span
             className={`bg-[#72757E] w-10 h-2 rounded-full transition-width duration-500 ease-in-out ${
               sectionIndex === 2 ? "bg-violet-600 w-14" : ""
+            }`}
+          ></span>
+          <span
+            className={`bg-[#72757E] w-10 h-2 rounded-full transition-width duration-500 ease-in-out ${
+              sectionIndex === 3 ? "bg-violet-600 w-14" : ""
             }`}
           ></span>
         </div>
