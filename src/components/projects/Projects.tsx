@@ -6,24 +6,15 @@ import InSync from "../../../public/Loading page.png";
 import FindMyDuo from "../../../public/FindMyDuo.png";
 import BurgerKenzie from "../../../public/BugerKenzie.png";
 import Netflix from "../../../public/Netflix2.0.png";
+import KImoveis from "../../../public/Kimoveis.png";
 import { SectionComponent } from "./section/Section";
-import NodeIcon from "../../assets/nodejs.svg";
-import TypescriptIcon from "../../assets/typescript.svg";
-import postegreSQLIcon from "../../assets/postegreSQL.svg";
-import ZodIcon from "../../assets/zod.svg";
-import typeORMIcon from "../../assets/typeORM.svg";
-import FirebaseIcon from "../../assets/firebase.svg";
-import ReactIcon from "../../assets/react.svg";
-import NextIcon from "../../assets/nextjs.svg";
-import JavaScriptIcon from "../../assets/javascript.svg";
-import SassIcon from "../../assets/sass.svg";
-import StripeIcon from "../../assets/stripe.svg";
+import * as Icons from "../../assets/index";
 
 export const ProjectsComponent = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
 
   const handleButtonClick = () => {
-    setSectionIndex((sectionIndex + 1) % 4);
+    setSectionIndex((sectionIndex + 1) % 5);
   };
 
   return (
@@ -43,11 +34,12 @@ export const ProjectsComponent = () => {
               link="https://github.com/insync-project"
               projectName="InSycn"
               projectTechs={[
-                NodeIcon,
-                TypescriptIcon,
-                postegreSQLIcon,
-                ZodIcon,
-                typeORMIcon,
+                Icons.Nodejs,
+                Icons.Typescript,
+                Icons.PostegreSQL,
+                Icons.Zod,
+                Icons.Jest,
+                Icons.TypeORM,
               ]}
             />
             <SectionComponent
@@ -58,12 +50,12 @@ export const ProjectsComponent = () => {
               link="https://projeto-findmyduo-six.vercel.app/"
               projectName="Find My Duo"
               projectTechs={[
-                ReactIcon,
-                TypescriptIcon,
-                postegreSQLIcon,
-                ZodIcon,
-                typeORMIcon,
-                FirebaseIcon,
+                Icons.Reactjs,
+                Icons.Typescript,
+                Icons.PostegreSQL,
+                Icons.Zod,
+                Icons.TypeORM,
+                Icons.Firebase,
               ]}
             />
             <SectionComponent
@@ -74,10 +66,10 @@ export const ProjectsComponent = () => {
               link="https://projeto-react-js-type-script-hamburgueria-2-0.vercel.app/login"
               projectName="Burger Kenzie"
               projectTechs={[
-                ReactIcon,
-                TypescriptIcon,
-                postegreSQLIcon,
-                typeORMIcon,
+                Icons.Reactjs,
+                Icons.Typescript,
+                Icons.PostegreSQL,
+                Icons.TypeORM,
               ]}
             />
             <SectionComponent
@@ -88,11 +80,28 @@ export const ProjectsComponent = () => {
               link="https://netflix-2-0-three.vercel.app/"
               projectName="Netflix 2.0"
               projectTechs={[
-                NextIcon,
-                JavaScriptIcon,
-                SassIcon,
-                FirebaseIcon,
-                StripeIcon,
+                Icons.NextJs,
+                Icons.Javascript,
+                Icons.Sass,
+                Icons.Firebase,
+                Icons.Stripe,
+              ]}
+            />
+            <SectionComponent
+              sectionIndex={sectionIndex}
+              image={KImoveis}
+              index={4}
+              description="O projeto consiste em desenvolver um serviço de back-end que gerencia uma imobiliária. O serviço será desenvolvido usando TypeORM e relacionamentos. O objetivo do serviço é gerenciar as informações da imobiliária e fornecer uma interface para que os usuários possam acessar essas informações."
+              link="https://github.com/GabrielRodriguesFerreira-TI/kimoveis-api-Typeorm"
+              projectName="KImoveis"
+              projectTechs={[
+                Icons.Nodejs,
+                Icons.Typescript,
+                Icons.TypeORM,
+                Icons.PostegreSQL,
+                Icons.Zod,
+                Icons.GithubActions,
+                Icons.Jest,
               ]}
             />
           </div>
@@ -122,6 +131,11 @@ export const ProjectsComponent = () => {
           <span
             className={`bg-[#72757E] w-10 h-2 rounded-full transition-width duration-500 ease-in-out ${
               sectionIndex === 3 ? "bg-violet-600 w-14" : ""
+            }`}
+          ></span>
+          <span
+            className={`bg-[#72757E] w-10 h-2 rounded-full transition-width duration-500 ease-in-out ${
+              sectionIndex === 4 ? "bg-violet-600 w-14" : ""
             }`}
           ></span>
         </div>
