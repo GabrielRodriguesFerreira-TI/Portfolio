@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface iSectionOptions {
-  image: StaticImageData;
+  image: string;
   index: number;
   projectName: string;
   description: string;

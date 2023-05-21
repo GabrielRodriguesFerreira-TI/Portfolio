@@ -26,7 +26,7 @@ export const PresentationComponent = () => {
               href="https://www.linkedin.com/in/gabriel-rodrigues-ferreira-27b21b243/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer"
+              className="cursor-pointer hover:scale-125 duration-500 ease-in-out"
             >
               <Image
                 src={Linkedin}
@@ -39,7 +39,7 @@ export const PresentationComponent = () => {
               href="https://github.com/GabrielRodriguesFerreira-TI"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer"
+              className="cursor-pointer hover:scale-125 duration-500 ease-in-out"
             >
               <Image src={GitHub} alt="Github picture" width={35} height={35} />
             </a>
@@ -47,7 +47,7 @@ export const PresentationComponent = () => {
               href="https://www.instagram.com/gabrielrodriguesj/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer"
+              className="cursor-pointer hover:scale-125 duration-500 ease-in-out"
             >
               <Image
                 src={Instagram}
