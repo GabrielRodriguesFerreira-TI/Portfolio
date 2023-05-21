@@ -45,7 +45,7 @@ export const SectionComponent = ({
             onClick={handleCloseClick}
             style={{ zIndex: 1 }}
           >
-            <Image src={image} alt="InSync project picture" />
+            <Image src={image} alt="Project image" width={1000} height={800} />
           </div>
         ) : (
           <>
@@ -61,8 +61,10 @@ export const SectionComponent = ({
               <div className="absolute top-[-140px] left-56 h-[200px] w-72 justify-center rounded-md overflow-hidden hidden md:mb-28 md:block">
                 <Image
                   src={image}
-                  alt="Profile picture"
+                  alt="Project image"
                   className="object-cover object-top w-full h-full"
+                  width={1000}
+                  height={900}
                 />
               </div>
               <a

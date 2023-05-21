@@ -11,7 +11,7 @@ export const PlanningComponent = () => {
       </div>
       <ul className="flex flex-col gap-14 p-4 justify-center md:flex-row md:w-[75%] md:gap-32 relative">
         <li
-          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-[#080808]"
+          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-gradient-to-t from-[#3D2C73] via-[#050505] to-[#050505] rounded-md p-2"
           style={{ zIndex: 1 }}
         >
           <h3 className="font-bold gradient-text text-xl">01</h3>
@@ -23,7 +23,7 @@ export const PlanningComponent = () => {
           </p>
         </li>
         <li
-          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-[#080808]"
+          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-gradient-to-t from-[#3D2C73] via-[#050505] to-[#050505] rounded-md p-2"
           style={{ zIndex: 1 }}
         >
           <h3 className="font-bold gradient-text text-xl">02</h3>
@@ -36,7 +36,7 @@ export const PlanningComponent = () => {
           </p>
         </li>
         <li
-          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-[#080808]"
+          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-gradient-to-t from-[#3D2C73] via-[#050505] to-[#050505] rounded-md p-2"
           style={{ zIndex: 1 }}
         >
           <h3 className="font-bold gradient-text text-xl">03</h3>

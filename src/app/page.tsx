@@ -1,33 +1,14 @@
-"use client";
-import { useState } from "react";
 import { ContactComponent } from "@/components/Contact/Contact";
 import { AboutMeComponent } from "@/components/aboutMe/AboutMe";
 import { PlanningComponent } from "@/components/planning/Planning";
 import { PresentationComponent } from "@/components/presentation/Presentation";
 import { ProjectsComponent } from "@/components/projects/Projects";
-import { NavBarComponent } from "@/components/navBar/NavBar";
+import { SectionChangeComponent } from "@/components/sectionChange/SectionChange";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState(0);
-
-  const handleSectionChange = (sectionIndex: number) => {
-    setActiveSection(sectionIndex);
-    scrollToSection(sectionIndex);
-  };
-
-  const scrollToSection = (sectionIndex: number) => {
-    const element = document.getElementById(`section-${sectionIndex}`);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <main className="grid grid-cols-1 gap-4 h-screen overflow-y-scroll bg-gradient">
-      <NavBarComponent
-        activeSection={activeSection}
-        handleSectionChange={handleSectionChange}
-      />
+      <SectionChangeComponent />
       <section
         id="section-0"
         className="h-screen px-4 py-2 flex flex-col gap-28 md:flex-row"
