@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ContactComponent } from "@/components/Contact/Contact";
 import { AboutMeComponent } from "@/components/aboutMe/AboutMe";
 import { PlanningComponent } from "@/components/planning/Planning";
@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <main className="grid grid-cols-1 gap-4 h-screen overflow-y-scroll">
+    <main className="grid grid-cols-1 gap-4 h-screen overflow-y-scroll bg-gradient">
       <NavBarComponent
         activeSection={activeSection}
         handleSectionChange={handleSectionChange}

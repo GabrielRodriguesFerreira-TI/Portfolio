@@ -1,4 +1,6 @@
 import "../presentation/presentation.css";
+import Linha from "../../../public/Linha.svg";
+import Image from "next/image";
 
 export const PlanningComponent = () => {
   return (
@@ -7,8 +9,11 @@ export const PlanningComponent = () => {
         <strong className="text-bold gradient-text">Planejamento</strong>
         <h2 className="font-bold text-4xl py-4">Como eu trabalho</h2>
       </div>
-      <ul className="flex flex-col gap-14 p-4 justify-center md:flex-row md:w-[75%] md:gap-32">
-        <li className="w-[90%] flex flex-col items-start gap-2 md:w-[35%]">
+      <ul className="flex flex-col gap-14 p-4 justify-center md:flex-row md:w-[75%] md:gap-32 relative">
+        <li
+          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-[#080808]"
+          style={{ zIndex: 1 }}
+        >
           <h3 className="font-bold gradient-text text-xl">01</h3>
           <h2 className="font-bold text-3xl">Estrutura</h2>
           <p className="text-gray-400 text-sm md:text-base">
@@ -17,7 +22,10 @@ export const PlanningComponent = () => {
             o Front-End
           </p>
         </li>
-        <li className="w-[90%] flex flex-col items-start gap-2 md:w-[35%]">
+        <li
+          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-[#080808]"
+          style={{ zIndex: 1 }}
+        >
           <h3 className="font-bold gradient-text text-xl">02</h3>
           <h2 className="font-bold text-3xl">Construção</h2>
           <p className="text-gray-400 text-sm md:text-base">
@@ -27,7 +35,10 @@ export const PlanningComponent = () => {
             monitoramento dos testes e build por Pipelines.
           </p>
         </li>
-        <li className="w-[90%] flex flex-col items-start gap-2 md:w-[35%]">
+        <li
+          className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] bg-[#080808]"
+          style={{ zIndex: 1 }}
+        >
           <h3 className="font-bold gradient-text text-xl">03</h3>
           <h2 className="font-bold text-3xl">Finalizando</h2>
           <p className="text-gray-400 text-sm md:text-base">
