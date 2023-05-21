@@ -38,4 +38,3 @@ next-env.d.ts
 
 #json
 client_secret.json
-image_s3.json
