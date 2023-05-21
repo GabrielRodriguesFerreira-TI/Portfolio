@@ -25,7 +25,7 @@ export const ProjectsComponent = () => {
       </div>
       <div className="flex flex-col gap-6 justify-center">
         <div className="flex flex-row gap-2 items-center justify-center">
-          <div className="bg-[#2B2B32] w-full max-w-2xl h-[280px] rounded-xl relative">
+          <div className="bg-[#2B2B32] w-full max-w-[740px] h-[280px] rounded-xl relative md:ml-12">
             <SectionComponent
               sectionIndex={sectionIndex}
               image={InSync}

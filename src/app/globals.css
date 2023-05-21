@@ -38,3 +38,9 @@ body {
     border-radius: 8px;
   }
 }
+
+.bg-gradient {
+  background-image: url("../../public/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

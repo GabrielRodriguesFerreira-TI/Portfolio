@@ -58,7 +58,7 @@ export const SectionComponent = ({
               >
                 <ImageIcon className="cursor-pointer" />
               </div>
-              <div className="absolute top-[-140px] left-48 h-[200px] w-72 justify-center rounded-md overflow-hidden hidden md:mb-28 md:block">
+              <div className="absolute top-[-140px] left-56 h-[200px] w-72 justify-center rounded-md overflow-hidden hidden md:mb-28 md:block">
                 <Image
                   src={image}
                   alt="Profile picture"
