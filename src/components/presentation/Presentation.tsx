@@ -1,5 +1,5 @@
 import "./presentation.scss";
-import "../../animations/breathing.animation.css";
+import "../../animations/breathing.animation.scss";
 import Image from "next/image";
 import LogoPic from "../../../public/portfolio-icon.svg";
 import Linkedin from "../../../public/icons8-linkedin.svg";
