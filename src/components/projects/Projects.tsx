@@ -129,7 +129,7 @@ export const ProjectsComponent = () => {
             }`}
           ></span>
           <span
-            className={`bg-[#72757E] w-10 h-2 rounded-full transition-width duration-500 ease-in-out ${
+            className={`bg-[#72757E] w-10 h-2 mr-12 rounded-full transition-width duration-500 ease-in-out md:mr-0 ${
               sectionIndex === 4 ? "bg-violet-600 w-14" : ""
             }`}
           ></span>

@@ -57,7 +57,7 @@ export const SectionComponent = ({
               >
                 <ImageIcon className="cursor-pointer" />
               </div>
-              <div className="w-72 relative">
+              <div className="w-72 relative hidden md:block">
                 <div className="absolute top-[-180px] left-2 h-[200px] w-full justify-center rounded-md overflow-hidden hidden md:mb-28 md:block">
                   <Image
                     src={image}
@@ -79,7 +79,7 @@ export const SectionComponent = ({
             </header>
             <ul className="p-2 text-start">
               <li>
-                <p>{description}</p>
+                <p className="text-sm md:text-base">{description}</p>
               </li>
             </ul>
             <div
