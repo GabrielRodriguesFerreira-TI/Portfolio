@@ -7,7 +7,10 @@ export const NavBarComponent: React.FC<NavBarProps> = ({
   handleSectionChange,
 }) => {
   return (
-    <nav className="fixed right-5 top-1/2 transform -translate-y-1/2 flex-col items-center gap-5 hidden md:flex">
+    <nav
+      className="fixed right-5 top-1/2 transform -translate-y-1/2 flex-col items-center gap-5 hidden md:flex"
+      style={{ zIndex: 2 }}
+    >
       <button
         className={`w-5 h-5 rounded-full mb-2 ${
           activeSection === 0 ? "bg-purple-600" : "bg-gray-400"

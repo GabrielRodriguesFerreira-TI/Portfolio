@@ -1,5 +1,4 @@
 "use client";
-import "./section.css";
 import Image from "next/image";
 import ImageIcon from "@mui/icons-material/Image";
 import { useState } from "react";
@@ -58,14 +57,16 @@ export const SectionComponent = ({
               >
                 <ImageIcon className="cursor-pointer" />
               </div>
-              <div className="absolute top-[-140px] left-56 h-[200px] w-72 justify-center rounded-md overflow-hidden hidden md:mb-28 md:block">
-                <Image
-                  src={image}
-                  alt="Project image"
-                  className="object-cover object-top w-full h-full"
-                  width={1000}
-                  height={900}
-                />
+              <div className="w-72 relative">
+                <div className="absolute top-[-180px] left-2 h-[200px] w-full justify-center rounded-md overflow-hidden hidden md:mb-28 md:block">
+                  <Image
+                    src={image}
+                    alt="Project image"
+                    className="object-cover object-top w-full h-full"
+                    width={1000}
+                    height={900}
+                  />
+                </div>
               </div>
               <a
                 href={`${link}`}
@@ -89,7 +90,7 @@ export const SectionComponent = ({
                 const iconName = extractIconName(element.src);
                 return (
                   <div
-                    className="relative inline-block tooltip"
+                    className="relative inline-block"
                     key={index}
                     title={iconName}
                   >

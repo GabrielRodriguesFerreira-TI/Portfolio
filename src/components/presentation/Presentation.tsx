@@ -1,4 +1,4 @@
-import "./presentation.css";
+import "./presentation.scss";
 import "../../animations/breathing.animation.css";
 import Image from "next/image";
 import LogoPic from "../../../public/portfolio-icon.svg";
@@ -10,7 +10,10 @@ import Descubra from "../../../public/descubra-icon.svg";
 export const PresentationComponent = () => {
   return (
     <>
-      <nav className="flex gap-3 md:flex-col md:gap-12 md:fixed">
+      <nav
+        className="flex gap-3 md:flex-col md:gap-12 md:fixed"
+        style={{ zIndex: 2 }}
+      >
         <Image
           src={LogoPic}
           alt="Picture of the site logo"
@@ -33,6 +36,7 @@ export const PresentationComponent = () => {
                 alt="Linkedin picture"
                 width={35}
                 height={35}
+                className="rounded-md"
               />
             </a>
             <a
@@ -41,19 +45,26 @@ export const PresentationComponent = () => {
               rel="noopener noreferrer"
               className="cursor-pointer hover:scale-125 duration-500 ease-in-out"
             >
-              <Image src={GitHub} alt="Github picture" width={35} height={35} />
+              <Image
+                src={GitHub}
+                alt="Github picture"
+                width={35}
+                height={35}
+                className="rounded-md"
+              />
             </a>
             <a
               href="https://www.instagram.com/gabrielrodriguesj/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer hover:scale-125 duration-500 ease-in-out"
+              className="cursor-pointer hover:scale-125 duration-500 ease-in-out rounded-md"
             >
               <Image
                 src={Instagram}
                 alt="Instagram picture"
                 width={35}
                 height={35}
+                className="rounded-md"
               />
             </a>
           </div>

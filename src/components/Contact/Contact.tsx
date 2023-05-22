@@ -7,7 +7,7 @@ import Linkedin from "../../../public/icons8-linkedin.svg";
 import GitHub from "../../../public/icons8-github.svg";
 import Instagram from "../../../public/icons8-instagram.svg";
 import { CssTextField } from "./styles";
-import "../presentation/presentation.css";
+import "../presentation/presentation.scss";
 
 export const ContactComponent = () => {
   const [email, setEmail] = useState("");
