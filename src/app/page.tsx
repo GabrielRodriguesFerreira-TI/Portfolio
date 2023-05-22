@@ -23,7 +23,7 @@ export default function Home() {
       </section>
       <section
         id="section-2"
-        className="h-screen px-4 flex flex-col gap-52 md:px-16"
+        className="h-screen px-4 flex flex-col gap-52 md:px-12"
       >
         <ProjectsComponent />
       </section>

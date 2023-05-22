@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import "../presentation/presentation.css";
+import "../presentation/presentation.scss";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { SectionComponent } from "./section/Section";
 import * as Icons from "../../assets/index";

@@ -1,4 +1,4 @@
-import "../../components/presentation/presentation.css";
+import "../../components/presentation/presentation.scss";
 import Image from "next/image";
 
 export const AboutMeComponent = () => {

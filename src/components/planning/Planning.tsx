@@ -1,4 +1,5 @@
-import "../presentation/presentation.css";
+import "./planning.scss";
+import "../presentation/presentation.scss";
 import Linha from "../../../public/Linha.svg";
 import Vector from "../../assets/Vector.svg";
 import Image from "next/image";
@@ -10,17 +11,9 @@ export const PlanningComponent = () => {
         <strong className="text-bold gradient-text">Planejamento</strong>
         <h2 className="font-bold text-4xl py-4">Como eu trabalho</h2>
       </div>
-      <ul className="flex flex-col p-4 gap-14 justify-center md:flex-row md:w-[85%] md:gap-32 md:p-0 relative">
-        <Image
-          src={Vector}
-          alt="Vector"
-          className="absolute hidden md:block top-[-145px] right-[15px]"
-        />
-        <Image
-          src={Linha}
-          alt="Linha"
-          className="absolute top-[-90px] right-12 w-full hidden md:block"
-        />
+      <ul className="flex flex-col p-4 gap-14 justify-center md:flex-row md:w-[85%] md:gap-24 md:p-0 relative lg:gap-32">
+        <Image src={Vector} alt="Vector" className="vector_svg" />
+        <Image src={Linha} alt="Linha" className="line_svg" />
         <li
           className="w-[90%] flex flex-col items-start gap-2 md:w-[35%] md:bg-gradient-to-t from-[#3D2C73] via-[#050505] to-[#050505] rounded-md p-2"
           style={{ zIndex: 1 }}
