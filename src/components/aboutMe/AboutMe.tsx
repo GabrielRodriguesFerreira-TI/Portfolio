@@ -1,6 +1,5 @@
 import "../../components/presentation/presentation.css";
 import Image from "next/image";
-import profilePicture from "../../../image_s3.json";
 
 export const AboutMeComponent = () => {
   return (
@@ -29,7 +28,7 @@ export const AboutMeComponent = () => {
       </div>
       <div className="h-[300px] w-72 justify-center rounded-full overflow-hidden md:mb-28 md:mt-12">
         <Image
-          src={profilePicture.s3.gabrielProfile}
+          src="https://fmd-storage.s3.amazonaws.com/linkedinProfilePicture.png"
           alt="Profile picture"
           className="object-cover object-top w-full h-full"
           width={1000}

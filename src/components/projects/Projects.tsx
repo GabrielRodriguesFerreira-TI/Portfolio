@@ -4,7 +4,6 @@ import "../presentation/presentation.css";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { SectionComponent } from "./section/Section";
 import * as Icons from "../../assets/index";
-import projectsImage from "../../../image_s3.json";
 
 export const ProjectsComponent = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -24,7 +23,7 @@ export const ProjectsComponent = () => {
           <div className="bg-[#2B2B32] w-full max-w-[740px] h-[280px] rounded-xl relative md:ml-12">
             <SectionComponent
               sectionIndex={sectionIndex}
-              image={projectsImage.s3.InSync}
+              image="https://fmd-storage.s3.amazonaws.com/Loading+page.png"
               index={0}
               description="A plataforma é um espaço online para que desenvolvedores possam encontrar outros profissionais interessados em trabalhar em projetos em grupo. Com uma interface intuitiva e recursos de busca avançados, é fácil encontrar pessoas com as habilidades necessárias para fazer o seu projeto acontecer."
               link="https://github.com/insync-project"
@@ -40,7 +39,7 @@ export const ProjectsComponent = () => {
             />
             <SectionComponent
               sectionIndex={sectionIndex}
-              image={projectsImage.s3.FindMyDuo}
+              image="https://fmd-storage.s3.amazonaws.com/FindMyDuo.png"
               index={1}
               description="Inicialmente feito para mobile. O “Find my Duo” tem como propósito ajudar pessoas que têm dificuldade em achar um parceiro(a) para jogar junto! Com o “Find my Duo” será possível encontrar gamers que tenham os mesmos gostos que os seus baseado em seu perfil."
               link="https://projeto-findmyduo-six.vercel.app/"
@@ -56,7 +55,7 @@ export const ProjectsComponent = () => {
             />
             <SectionComponent
               sectionIndex={sectionIndex}
-              image={projectsImage.s3.BurgerKenzie}
+              image="https://fmd-storage.s3.amazonaws.com/BugerKenzie.png"
               index={2}
               description="O projeto Hamburgueria da Kenzie simula a página de pedidos de uma lanchonete, tornando possível adicionar e excluir itens no carrinho de compras, como também filtrar os itens do catálogo."
               link="https://projeto-react-js-type-script-hamburgueria-2-0.vercel.app/login"
@@ -70,7 +69,7 @@ export const ProjectsComponent = () => {
             />
             <SectionComponent
               sectionIndex={sectionIndex}
-              image={projectsImage.s3.Netflix20}
+              image="https://fmd-storage.s3.amazonaws.com/Netflix2.0.png"
               index={3}
               description="Projeto baseado na interface do Netflix, com sistema de pagamentos(fake) pelo stripe em conjunto com a database do Firebase."
               link="https://netflix-2-0-three.vercel.app/"
@@ -85,7 +84,7 @@ export const ProjectsComponent = () => {
             />
             <SectionComponent
               sectionIndex={sectionIndex}
-              image={projectsImage.s3.KImovies}
+              image="https://fmd-storage.s3.amazonaws.com/Kimoveis.png"
               index={4}
               description="O projeto consiste em desenvolver um serviço de back-end que gerencia uma imobiliária. O serviço será desenvolvido usando TypeORM e relacionamentos. O objetivo do serviço é gerenciar as informações da imobiliária e fornecer uma interface para que os usuários possam acessar essas informações."
               link="https://github.com/GabrielRodriguesFerreira-TI/kimoveis-api-Typeorm"
