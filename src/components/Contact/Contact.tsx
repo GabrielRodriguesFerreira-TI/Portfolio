@@ -1,4 +1,5 @@
 "use client";
+import "./contact.scss";
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -139,7 +140,7 @@ export const ContactComponent = () => {
               id="standard-basic"
               label="Email"
               variant="standard"
-              className="text-sm w-full"
+              className="text-sm w-full labelColor"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
@@ -149,7 +150,7 @@ export const ContactComponent = () => {
               id="standard-basic"
               label="Assunto"
               variant="standard"
-              className="text-sm w-full"
+              className="text-sm w-full labelColor"
               onChange={(e) => setTitle(e.target.value)}
               value={title}
             />
@@ -160,7 +161,7 @@ export const ContactComponent = () => {
             id="standard-basic"
             label="Conte-me sobre seu projeto"
             variant="standard"
-            className="text-sm w-[90%]"
+            className="text-sm w-[90%] labelColor"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
           />

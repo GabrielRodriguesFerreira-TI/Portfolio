@@ -23,10 +23,6 @@ export const CssTextField = styled(TextField)({
     color: "#ffffff",
   },
 
-  "& .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root": {
-    color: "#94A1B2",
-  },
-
   "& .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root": {
     color: "#94A1B2",
   },

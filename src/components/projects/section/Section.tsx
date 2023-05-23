@@ -71,10 +71,13 @@ export const SectionComponent = ({
               <a
                 href={`${link}`}
                 target="_blank"
-                className="cursor-pointer text-sm text-gray-400"
+                className="cursor-pointer text-sm text-gray-400 relative inline-block"
                 style={{ zIndex: 1 }}
               >
-                Link do projeto
+                <span className="group">
+                  Link do projeto
+                  <span className="absolute left-0 bottom-[-4px] w-full h-0.5 bg-violet-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </span>
               </a>
             </header>
             <ul className="p-2 text-start">
