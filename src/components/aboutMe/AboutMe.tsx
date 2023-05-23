@@ -1,3 +1,4 @@
+import "./aboutMe.scss";
 import "../../components/presentation/presentation.scss";
 import Image from "next/image";
 
@@ -26,14 +27,27 @@ export const AboutMeComponent = () => {
           solução de bugs de forma eficiente e eficaz.
         </p>
       </div>
-      <div className="h-[300px] w-72 justify-center rounded-full overflow-hidden md:mb-28 md:mt-12">
-        <Image
-          src="https://fmd-storage.s3.amazonaws.com/linkedinProfilePicture.png"
-          alt="Profile picture"
-          className="object-cover object-top w-full h-full"
-          width={1000}
-          height={900}
-        />
+      <div className="flex flex-col w-full max-w-lg items-center gap-12 md:w-[40%] md:flex-col-reverse md:gap-8">
+        <div className="w-full h-12 flex justify-center items-center rounded-md box-animation overflow-hidden cursor-pointer">
+          <span></span>
+          <a
+            href="https://docs.google.com/document/d/1vQRxCx-yN_nRN-haDlGUbWkG8ncc9n2gDOAnRo2Crlw/edit?usp=sharing"
+            target="_blank"
+            className="font-bold text-lg tracking-widest relative"
+            style={{ zIndex: 2 }}
+          >
+            Curriculo
+          </a>
+        </div>
+        <div className="h-[300px] w-72 justify-center rounded-full overflow-hidden md:mb-28 md:mt-12">
+          <Image
+            src="https://fmd-storage.s3.amazonaws.com/linkedinProfilePicture.png"
+            alt="Profile picture"
+            className="object-cover object-top w-full h-full"
+            width={1000}
+            height={900}
+          />
+        </div>
       </div>
     </>
   );

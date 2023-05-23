@@ -17,7 +17,7 @@ export default function Home() {
       </section>
       <section
         id="section-1"
-        className="h-screen px-4 flex flex-col items-center gap-3 md:flex-row md:justify-center md:gap-36 md:py-4 md:px-16"
+        className="h-screen px-4 flex flex-col items-center gap-3 justify-around md:flex-row md:justify-center md:gap-16 md:py-4 md:px-20 md:relative"
       >
         <AboutMeComponent />
       </section>
